@@ -1,48 +1,38 @@
-<p>
-  <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
-  </mat-toolbar>
-</p>
+<div class="main">
 
 
-<mat-card class="mat-card">
-    <div class="login-box" >
+  <div class="container">
+    <div style="text-align: center;">
+      <div class="middle">
+        <div id="login">
 
-          <div class="login-box-row">
-            <h1 style="padding-top: 10%;text-align: center;padding-bottom: 5%">My APP</h1>
-          </div>
-      <h3 style="padding-top: 10%;text-align: center;padding-bottom: 5%">Sign In</h3>
-      <form class="example-form">
-        <div class="username" style="text-align: center">
-          <mat-form-field appearance="outline">
-          <mat-label>Username</mat-label>
-            <input matInput placeholder="Username" >
-          </mat-form-field>
+          <form action="javascript:void(0);" method="get">
+
+            <fieldset class="clearfix">
+
+              <p ><span class="fa fa-user"></span><input type="text"  Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+              <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+              <div>
+                                <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
+                                password?</a></span>
+                <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
+              </div>
+
+            </fieldset>
+            <div class="clearfix"></div>
+          </form>
+
+          <div class="clearfix"></div>
+
+        </div> <!-- end login -->
+        <div class="logo">Store
+
+          <div class="clearfix"></div>
         </div>
-        <div class="password" style="text-align: center">
-          <mat-form-field appearance="outline">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" placeholder="Username" >
-          </mat-form-field>
-        </div>
-        <div class="main-buttons" style="text-align: center">
-          <button mat-raised-button color="primary" style="margin-right:5px;">login</button>
-          <button mat-raised-button color="primary" style="margin-right:5px;">register</button>
-        </div>
-      </form>
+
+      </div>
     </div>
-</mat-card>
+  </div>
 
-
-
-
+</div>
